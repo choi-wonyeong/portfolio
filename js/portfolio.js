@@ -78,14 +78,27 @@
 			if( $(window).scrollTop()>2500 ){
 				$("#portfolio> section").eq(1).addClass("act");
 			}
-			if( $(window).scrollTop()>3400 ){
+			if( $(window).scrollTop()>3000 ){
 				$("#portfolio> section").eq(2).addClass("act");
 			}
-			if( $(window).scrollTop()>3400 ){
+			if( $(window).scrollTop()>3900 ){
 				$("#portfolio> section").eq(3).addClass("act");
 			}
-		});		
+		});				
 	}
+	
+	//스크롤 내리면  게이지 올라감
+	
+	$(window).scroll(function(){
+				
+				if( $(window).scrollTop()>500 ){            
+        $(".w1").stop().delay(200).animate({width:"90%"});
+        $(".w2").stop().delay(200).animate({width:"80%"});
+        $(".w3").stop().delay(200).animate({width:"70%"});
+        $(".w4").stop().delay(200).animate({width:"70%"});
+        $(".w5").stop().delay(200).animate({width:"50%"});
+        }
+	});
 	
 	$(".hover-bg>a:not(.noBlack)").click(function(){
 		var x1 = $(this).find("img").attr("src");

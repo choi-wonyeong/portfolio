@@ -44,6 +44,13 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 #about  section> p {font-weight:300; font-size:0.9rem;}
 #about h3 {margin:50pt 0 10pt 0;}
 
+#skill> div {display:flex; align-items:center;}
+#skill> div> span {display:block; width:100px; color:#5D5D5D;}
+#skill> div> div {width:200px; height:20px; background:#eff7ff; margin-left:10px;}
+#skill> div> div span {display:block; height:100%; background:#3e5f6c; text-align:right; font-size:0.9rem; font-weight:bold; color:#f1f1f1; line-height:130%; padding-right:6px;}
+
+.w1, .w2, .w3, .w4, .w5 {width:0;}
+
 /*Portfolio*/
 #portfolio {max-width:1000pt;margin:auto; overflow:hidden;}
 #portfolio> section {display:flex; align-items:center;}
@@ -71,11 +78,10 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 #portfolio> section:nth-of-type(4).act> div:first-child {transform:translateX(0);}
 #portfolio> section:nth-of-type(4).act> div:last-child	{transform:translateX(0);}
 
-#portfolio> section:not(#leeum) {min-height:40vh;padding-top:10vh;  }
-#portfolio  div {line-height:270%;}
+#portfolio> section:not(#seoul) {min-height:40vh;padding-top:10vh;  }
+#portfolio div {line-height:270%;}
 #portfolio h3 {font-size:2.3rem; padding-bottom:20pt;}
 #portfolio div:first-child {padding-right:30pt; }
-#leeum div:first-child {width:900pt;}
 #portfolio ul {list-style:none; margin-bottom:25pt;}
 #portfolio li {display:flex;}
 #portfolio b  {min-width:60pt;}
@@ -123,11 +129,12 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 	#top {background-size:auto 100vh;}
 	#typing {font-size:2rem;}	
 	
-	nav {padding:10pt 5pt 5pt 5pt;}
-	nav> div {display:block; }
+	nav {padding:10pt 5pt 5pt 5pt; }
+	nav> div {display:block;}
 	nav p {margin-bottom:5pt;}
 	nav p+div {line-height:120%;}
-	nav a {font-size:0.9rem; margin-left:18pt;}
+	nav div>div {float:right;}
+	nav a {font-size:0.9rem; margin-left:18pt; }
 	nav a:first-child {margin-left:0;}
 	/***********/
 	.area {padding-top:18vh;}
@@ -143,16 +150,20 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 	#portfolio> section:nth-of-type(2)> div:last-child	{transform:translateX(0);}
 	#portfolio> section:nth-of-type(3)> div:first-child {transform:scale(1); opacity:1;}
 	#portfolio> section:nth-of-type(3)> div:last-child	{transform:scale(1); opacity:1;}
+	#portfolio> section:nth-of-type(4)> div:first-child {transform:translateX(0);}
+	#portfolio> section:nth-of-type(4)> div:last-child	{transform:translateX(0);}
 	
 	#portfolio  h3   {font-size:1.8rem;}
 	#portfolio  img  {margin-bottom:30pt;}
 	
-	#leeum, #tae {flex-direction:column-reverse;}
-	#burts {flex-direction:column;}
+	#seoul, #gogh {flex-direction:column-reverse;}
+	#food, #money {flex-direction:column;}
 	
 	#portfolio div:first-child {padding-right:0pt;}
 	#portfolio a {padding:4pt 13pt;}
 	#portfolio a:first-of-type {margin-right:5pt;}
+	
+
 	
 	
 }
