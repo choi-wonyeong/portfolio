@@ -123,7 +123,6 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 
 
 @media (max-width:600px) {
-	
 	h2 {font-size:2.2rem;}
 	.area {/*padding-top:11vh;*/} 
 	#top {background-size:auto 100vh;}
