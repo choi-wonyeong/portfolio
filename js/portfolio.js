@@ -70,7 +70,7 @@
 	}
 	
 	//((모바일이 아닌 화면))스크롤을 내릴때마다 작품이 하나씩 보임
-	if( $(window).width()> 600 ){
+	if( $(window).width()> 500 ){
 		$(window).scroll(function(){
 			if( $(window).scrollTop()>1600 ){
 				$("#portfolio> section").eq(0).addClass("act");
@@ -78,11 +78,14 @@
 			if( $(window).scrollTop()>2500 ){
 				$("#portfolio> section").eq(1).addClass("act");
 			}
-			if( $(window).scrollTop()>3000 ){
+			if( $(window).scrollTop()>3400 ){
 				$("#portfolio> section").eq(2).addClass("act");
 			}
-			if( $(window).scrollTop()>3900 ){
+			if( $(window).scrollTop()>4300 ){
 				$("#portfolio> section").eq(3).addClass("act");
+			}
+			if( $(window).scrollTop()>5200 ){
+				$("#portfolio> section").eq(4).addClass("act");
 			}
 		});				
 	}

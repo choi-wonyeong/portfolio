@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+* 								{padding:0; margin:0; box-sizing:border-box;}
+html,body		{font:10pt "나눔고딕"; color:#666;}
+a 								{text-decoration:none; color:#666;}
+img						 {max-width:100%; display:block;}
+
+#layout			 {width:1100px; margin:auto;}
+
+/*상단*/
+header					{display:flex; height:200px; padding-top:50px;}
+header>ul		{
+	flex:2; display:flex; list-style:none; margin-top:15px; 
+	position:relative; z-index:1; background:white; padding:10px; /*height:200px;*/}
+header li		{flex:1; text-align:center; position:relative;}
+
+/*메인메뉴*/
+header li>a {display:block; padding:15px; font-size:1.2rem; font-weight:bold;}
+header li>a:hover {background:#004f8a; color:white;}
+
+/*하위메뉴*/
+header nav			{position:absolute; width:100%; display:none;}
+header nav a	{display:block; line-height:250%; }
+header nav a:hover {color:#1a85d5; font-weight:bold; font-size:1.1rem;}
+
+/*상단로고*/
+header>div	{flex:1;}
+header>div a {animation:down 2s 1s both;}
+@keyframes down {
+	from {transform:translateY(-100px); opacity:0;}
+	to		{transform:translateY(0); opacity:1;}
+}
+
+/*메뉴 테스트
+header ul:hover					{height:200px;}
+header ul:hover nav {display:block;}*/
+
+/*슬라이드*/
+#slide						{overflow:hidden; position:relative;}
+#slide h1			{
+	position:absolute; background:rgba(255,255,255, 0.9); color:black; 
+	padding:30px 80px; line-height:170%; border-radius:20px; top:30%; left:30%; 
+	animation:big 2s both;}
+	@keyframes big	{
+	from {transform:scale(0.2); opacity:0;}
+	to   {transform:scale(1); opacity:1;}
+	}
+#slide div	{display:flex; width:3300px; position:relative; z-index:-1;}
+#slide img	{width:1100px;}
+
+/*메인*/
+main 			{display:flex; margin-top:40px; position:relative; height:350px; width:100%;}
+main h2 {padding-bottom:5px; margin-bottom:20px; border-bottom:1px solid #999; }
+
+/*공지사항*/
+#notice									{flex:1; margin-right:80px;}
+#notice ol 					{list-style:none; line-height:200%;}
+#notice ol span {float:right;}
+#notice a:hover		{color:skyblue; text-decoration:underline;}
+
+/*협력사 콘텐츠*/
+#partner									{flex:1; margin-right:60px;}
+#partner div					{display:flex; margin-top:20px; margin-left:30px;}
+#partner section {
+	width:150px; height:150px; background:gray; color:white; border-radius:50%; 
+	position:relative; animation:rotate 2s both;}
+	@keyframes rotate	{
+	from {transform:translateX(-700px) rotate(720deg);}
+	to		{transform:translateX(0) rotate(0);}
+	}
+#partner h3						{margin-top:40%; text-align:center; font-size:1.2rem;}
+#partner	ul						{list-style:none; align-self:center; margin-left:30px; line-height:200%;}
+#partner a:hover		{color:dodgerblue; text-decoration:underline;}
+
+/*배너*/
+#banner		 		{flex:0.6; text-align:right; padding-top:30px; }
+#banner h2		{display:none;}
+#banner a 		{display:block; transition:0.2s; margin-bottom:10px;}
+#banner img	{margin-right:0; margin-left:auto;}
+
+#banner a:hover {transform:translateY(-5px); filter:sepia(100%);}
+
+/*팝업*/
+#popup {
+	width:700px; box-shadow:0px 0px 5px rgba(0,0,0, 0.6); 
+	position:absolute; padding:20px; padding-bottom:30px; 
+	border-radius:20px; left:calc((100% - 600px) / 2); 	top:-200px;
+	background:white;  display:none;
+	}
+#popup h2	{display:none;}
+#popup img  {width:100%; display:block; margin:auto;}
+#popup button {display:block; margin-top:40px; float:right;}
+
+
+/*하단*/
+footer 			{background:#ddd; padding:20px; margin-top:50px;}
+footer ul {list-style:none; display:flex; justify-content:space-between; line-height:180%;}
+footer li:not(:last-child) a {display:inline-block;}
+footer li:first-child a {display:block;}
+footer a:hover 	{color:black; text-decoration:underline;}
+
+

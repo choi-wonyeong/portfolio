@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>양키캔들 웹사이트 디자인 시안</title>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script>
+		$(document).on("pagecreate","#layout", function(){
+			$("#slide a").on("click swipeleft" , function(){
+				$("#slide").stop().animate({left:"-1920px"},"slow",function(){
+					$(this).append( $("#slide a").first() );
+					$(this).css("left",0);
+				});
+			});
+		});
+	</script>
+	<style>
+::-webkit-scrollbar {width: 1px;}
+* {margin:0; padding:0; box-sizing:border-box;}
+section{width:1920px; margin:auto; overflow:hidden; }
+h1 {display:none;}
+div {display:flex; flex-wrap:wrap; width:calc(1920px * 3); position:relative; touch-action:none;}
+img {display:block; width:1920px;}
+	</style>
+</head>
+<body>
+	<section id="layout">
+		<h1>양키캔들 웹사이트 디자인 시안</h1>
+		<div data-role="page" id="slide">
+			<a href="#"><img src="images/main.jpg" title="클릭하거나 왼쪽방향으로 드래그하면 다음 장면으로 이동합니다." alt="양키캔들 웹사이트 메인 화면 디자인 시안"></a>
+			<a href="#"><img src="images/sub1.jpg" title="클릭하거나 왼쪽방향으로 드래그하면 다음 장면으로 이동합니다." alt="양키캔들 웹사이트 서브 화면 디자인 시안"></a>
+			<a href="#"><img src="images/sub2.jpg" title="클릭하거나 왼쪽방향으로 드래그하면 다음 장면으로 이동합니다." alt="양키캔들 웹사이트 서브 화면 디자인 시안"></a>
+		</div>
+	</section>
+</body>
+</html>
