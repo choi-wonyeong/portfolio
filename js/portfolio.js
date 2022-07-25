@@ -97,7 +97,7 @@
 				if( $(window).scrollTop()>500 ){            
         $(".w1").stop().delay(200).animate({width:"90%"});
         $(".w2").stop().delay(200).animate({width:"80%"});
-        $(".w3").stop().delay(200).animate({width:"70%"});
+        $(".w3").stop().delay(200).animate({width:"80%"});
         $(".w4").stop().delay(200).animate({width:"70%"});
         $(".w5").stop().delay(200).animate({width:"50%"});
         }
