@@ -52,9 +52,8 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 .w1, .w2, .w3, .w4, .w5 {width:0;}
 
 /*Portfolio*/
-#portfolio {max-width:1000pt;margin:auto; overflow:hidden;}
-#portfolio> section {display:flex; align-items:center;}
-#seoul {padding:10vh 0 10vh 0; }
+#portfolio {max-width:1000pt;margin:auto; overflow:hidden; margin-bottom:100px; }
+#portfolio> section {display:flex; align-items:center; padding:10vh 0 10vh 0; }
 
 #portfolio> section:nth-of-type(1) 		{transform:translateY(100px); opacity:0; transition:1s;}
 #portfolio> section:nth-of-type(1).act	{transform:translateY(0); opacity:1;}
@@ -80,7 +79,7 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 #portfolio> section:nth-of-type(5).act> div:first-child {transform:translateX(0);}
 #portfolio> section:nth-of-type(5).act> div:last-child	{transform:translateX(0);}
 
-#portfolio> section:not(#seoul) {min-height:40vh;padding-top:10vh; margin-bottom:200px;}
+#portfolio> section:not(#seoul) {min-height:40vh;padding-top:10vh;}
 #portfolio div {line-height:270%;}
 #portfolio h3 {font-size:2.3rem; padding-bottom:20pt;}
 #portfolio div:first-child {padding-right:30pt;}
@@ -155,16 +154,17 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 	#portfolio> section:nth-of-type(1)	{ transform:translateY(0); opacity:1;}
 	#portfolio> section:nth-of-type(2)> div:first-child {transform:translateX(0);}
 	#portfolio> section:nth-of-type(2)> div:last-child	{transform:translateX(0);}
-	#portfolio> section:nth-of-type(3)> div:first-child {transform:scale(1); opacity:1;}
-	#portfolio> section:nth-of-type(3)> div:last-child	{transform:scale(1); opacity:1;}
-	#portfolio> section:nth-of-type(4)> div:first-child {transform:translateX(0);}
-	#portfolio> section:nth-of-type(4)> div:last-child	{transform:translateX(0);}
+	#portfolio> section:nth-of-type(3)	{ transform:translateY(0); opacity:1;}
+	#portfolio> section:nth-of-type(4)> div:first-child {transform:scale(1); opacity:1;}
+	#portfolio> section:nth-of-type(4)> div:last-child	{transform:scale(1); opacity:1;}
+	#portfolio> section:nth-of-type(5)> div:first-child {transform:translateX(0);}
+	#portfolio> section:nth-of-type(5)> div:last-child	{transform:translateX(0);}
 	
 	#portfolio  h3   {font-size:1.8rem;}
 	#portfolio  img  {margin-bottom:30pt;}
 	
-	#seoul, #gogh {flex-direction:column-reverse;}
-	#food, #money {flex-direction:column;}
+	#seoul, #candle, #money {flex-direction:column-reverse;}
+	#food, #gogh {flex-direction:column;}
 	
 	#portfolio div:first-child {padding-right:0pt;}
 	#portfolio a {padding:4pt 13pt;}
