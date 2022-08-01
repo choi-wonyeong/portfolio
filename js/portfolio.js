@@ -40,7 +40,7 @@
 	});
 	
 	//상단 한글자씩 나오는 기능 (타자치는 효과)
-	const typing = "안녕하세요. \n최원영의 포트폴리오입니다."
+	const typing = "안녕하세요. \n귀사의 행운이 되고 싶은 \n최원영의 포트폴리오입니다."
 	console.log(typing);
 	//$("h1").html( typing[4]  );  "요"
 	let i = 0; 
