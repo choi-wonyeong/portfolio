@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>빈센트 반 고흐 전시회</title>	
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+				$("header button").click(function(){
+					if( $("nav").css("display") == "block" ){
+						$("nav").stop().slideUp(); 
+						$(this).text("menu");
+					} else {
+						$("nav").stop().slideDown(); 
+						$(this).text("close");
+					}
+				});		
+			});
+		</script>
+		<style>
+			* 	 		{margin:0; padding:0;}
+			img	 		{max-width:100%; display:block;}
+			body	  {font:10pt '나눔고딕'; background:black;}
+			
+			#layout {width:414px; margin:auto; position:relative;}
+			
+			/*상단*/
+			header {display:flex; padding:15px; padding-top:25px; border-bottom:2px solid gray;}
+			header h1 {flex:1;}
+			header h1 img {margin:auto;}
+			header button	{color:white; font-size:2.5rem; background:transparent; border:none; }
+			
+			/*메뉴*/
+			nav 	{background:#162039; position:absolute; width:100%; max-width:414px; padding:40px 0px; display:none;}
+			nav ul {line-height:450%;  padding-left:20%;  color:white; list-style-image:url("images/icon_star.jpg");}
+			nav a {color:white; text-decoration:none; font-size:1.25rem; margin-left:8px; display:block;}
+			
+			/*콘텐츠*/
+			section h2 {display:none;}
+			section img {width:100%;}
+		</style>
+	</head>
+	<body>
+		<div id="layout">
+			<header>
+				<h1><a href="index.html"><img src="images/logo.jpg"></a></h1>
+				<button type="button" class="material-icons">menu</button>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="history.html">빈센트 반 고흐</a></li>
+					<li><a href="life.html">그의 일생</a></li>
+					<li><a href="art.html">그의 작품</a></li>
+					<li><a href="display.html">빈센트 반 고흐 전시회</a></li>
+				</ul>
+			</nav>
+			<section>
+				<h2>메인</h2>
+				<img src="images/display.jpg" alt="반 고흐 작품 전시회">
+			</section>
+		</div>
+	</body>
+</html>
