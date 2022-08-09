@@ -13,7 +13,7 @@ nav.act {background:#70C3A6;}
 nav> div {max-width:1490px; margin:auto; display:flex;}
 nav p {flex:1; font-size:1.2rem; color:white;}
 nav a {margin-left:20pt; color:white; /*text-shadow:0 0 5px #254554;*/}
-nav a:hover, a.active {color:#002952;}
+nav a:hover, a.active {color:#093e2c;}
 
 /*헤더*/
 #top {height:100vh; background:url("../images/bg.jpg") no-repeat fixed center top / cover;}
@@ -32,12 +32,12 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 
 
 /*About*/
-#about {background:#EAFDF5;}
+#about {background:#eafdf5;}
 #about img {width:400pt; margin:0pt auto; }
 #about> p {max-width:150pt; margin:auto; text-align:center;}
 #about  q {font-weight:bold; font-size:1.2rem; line-height:200%;}
 #about> div {max-width:900pt; margin:auto; display:flex;}
-#about  section {flex:1;}
+#about  section {flex:1; margin-left:10pt;}
 #about  section:nth-child(1) {flex:1;}
 #about  section:nth-child(2) {flex:2;}
 #about  section:nth-child(3) {flex:0.8;}
@@ -47,7 +47,7 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 #skill> div {display:flex; align-items:center;}
 #skill> div> span {display:block; width:100px; color:#5D5D5D;}
 #skill> div> div {width:200px; height:20px; background:#fff; margin-left:10px;}
-#skill> div> div span {display:block; height:100%; background:#70C3A6; text-align:right; font-size:0.9rem; font-weight:bold; color:#FFF; line-height:130%; padding-right:6px;}
+#skill> div> div span {display:block; height:100%; background:#146211; text-align:right; font-size:0.9rem; font-weight:bold; color:#FFF; line-height:130%; padding-right:6px;}
 
 .w1, .w2, .w3, .w4, .w5 {width:0;}
 
@@ -168,11 +168,9 @@ h2 {text-align:center; font-size:3rem; margin-bottom:60pt; color:black;}
 	#food, #gogh {flex-direction:column;}
 	
 	#portfolio div:first-child {padding-right:0pt;}
-	#portfolio a {padding:4pt 13pt;}
-	#portfolio a:first-of-type {margin-right:5pt;}
+	#portfolio a {padding:5pt 10pt; margin-right:0pt;}
 	
-
-	
+		
 	
 }
 /* 넓이 (0~375픽셀) */
